@@ -1,4 +1,4 @@
-import { dirname, resolve } from "path";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, "src/index.html"),
         about: resolve(__dirname, "src/about.html"),
-        product: resolve(__dirname, "src/product.html"),
+        products: resolve(__dirname, "src/products.html"),
       },
     },
   },

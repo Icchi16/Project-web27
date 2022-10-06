@@ -1,5 +1,5 @@
 {
-  "name": "project-web27",
+  "name": "web27-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "jquery": "^3.6.1"
+    "bootstrap-icons": "^1.9.1",
+    "jquery": "^3.6.1",
+    "slick-carousel": "^1.8.1"
   }
 }

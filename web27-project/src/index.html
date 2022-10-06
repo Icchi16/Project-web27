@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-main">
+        <div class="container d-flex">
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <a href="#" class="navbar-brand"
+              ><img src="/img/logo.svg" alt=""
+            /></a>
+            <ul class="navbar-nav gap-4">
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sự kiện
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Nổi bật</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sự kiện</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lịch trình</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Khám phá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin Tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sự kiện
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sect-1 hero">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner position-relative hero-overlay">
+          <div class="carousel-item active">
+            <img src="/img/hero-1.jpg" class="d-block w-100" alt="..." />
+            <div class="container">
+              <div class="carousel-caption">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="/img/hero-1.jpg" class="d-block w-100" alt="..." />
+            <div class="container">
+              <div class="carousel-caption">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="/img/hero-1.jpg" class="d-block w-100" alt="..." />
+            <div class="container">
+              <div class="carousel-caption">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="sect-2 hot">
+      <div class="container">
+        <div class="sect-heading text-center">
+          <h1 class="display-4 fst-italic text-light">Nổi Bật</h1>
+        </div>
+      </div>
+
+      <div class="container text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div
+            id="recipeCarousel"
+            class="carousel-hot slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item-hot active">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="//via.placeholder.com/500x400/31f?text=1"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-img-overlay">Slide 1</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item-hot">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="//via.placeholder.com/500x400/e66?text=2"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-img-overlay">Slide 2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item-hot">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="//via.placeholder.com/500x400/7d2?text=3"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-img-overlay">Slide 3</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item-hot">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="//via.placeholder.com/500x400?text=4"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-img-overlay">Slide 4</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item-hot">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="//via.placeholder.com/500x400/aba?text=5"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-img-overlay">Slide 5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item-hot">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="//via.placeholder.com/500x400/fc0?text=6"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="card-img-overlay">Slide 6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev bg-transparent w-aut"
+              href="#recipeCarousel"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next bg-transparent w-aut"
+              href="#recipeCarousel"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
