@@ -1,6 +1,15 @@
 import "../css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import $ from "jquery";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.js";
-import "./hot-carousel.js";
+
+import $ from "jquery";
+import "jquery/dist/jquery.min.js"
+import "slick-carousel/slick/slick.min.js";
+
+$(".autoplay").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
