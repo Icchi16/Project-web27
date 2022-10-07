@@ -1,4 +1,5 @@
-import "../css/style.css";
+import "../css/global.css";
+import "../css/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.js";
