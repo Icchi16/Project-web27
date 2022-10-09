@@ -1,0 +1,13 @@
+:root {
+  --nav-bg-1: #2b2a28;
+  --nav-bg-2: #2d2927;
+  --color-main: #b27936;
+}
+
+.bg-main-1 {
+  background-color: var(--nav-bg-1);
+}
+
+.bg-main-2 {
+  background-color: var(--nav-bg-2);
+}
