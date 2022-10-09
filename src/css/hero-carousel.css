@@ -1,0 +1,21 @@
+.carousel-item {
+  height: 1000px;
+}
+
+.hero-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #2b2928 10.71%,
+    rgba(96, 90, 83, 0.46) 39.06%,
+    rgba(96, 90, 83, 0.58) 71.88%,
+    #2d2927 100%
+  );
+  mix-blend-mode: normal;
+}
+
+.carousel-caption {
+  z-index: 100;
+}
