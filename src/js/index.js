@@ -3,7 +3,7 @@ import "jquery/dist/jquery.min.js";
 import $ from "jquery";
 
 import "bootstrap/dist/js/bootstrap.js";
-import "jquery-migrate/dist/jquery-migrate.min.js";
+// import "jquery-migrate/dist/jquery-migrate.min.js";
 import Glide from "@glidejs/glide";
 import "slick-carousel/slick/slick.min.js";
 
@@ -26,6 +26,3 @@ import "./carousel.js";
 //   perView: 1,
 //   focusAt: "center",
 // }).mount();
-
-
-
