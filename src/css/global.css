@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
 :root {
   --nav-bg-1: #2b2a28;
   --nav-bg-2: #2d2927;
   --color-main: #b27936;
+  --placeholder-color: rgb(215, 215, 215, 0.5);
+}
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+img {
+  text-align: center;
+  width: 100%;
 }
 
 .bg-main-1 {
@@ -10,4 +22,8 @@
 
 .bg-main-2 {
   background-color: var(--nav-bg-2);
+}
+
+::placeholder {
+  color: var(--placeholder-color);
 }
