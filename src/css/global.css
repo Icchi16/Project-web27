@@ -27,3 +27,21 @@ img {
 ::placeholder {
   color: var(--placeholder-color);
 }
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+
+input[type="search"] {
+  color: rgba(215, 215, 215, 0.7);
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+
+  width: 20px;
+  height: 15px;
+  background: url("/img/x.svg");
+}

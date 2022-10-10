@@ -63,10 +63,19 @@
 }
 
 .search-type {
+  color: rgba(215, 215, 215, 0.568);
   background: none;
   border: none;
   text-align: right;
-  padding-right: 0;
+  margin-right: -10px;
+  outline: none;
+
+  font-weight: 200;
+  font-size: small;
+}
+
+.search-type:focus {
+  border: none;
 }
 
 .search-btn {

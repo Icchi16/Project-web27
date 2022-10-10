@@ -1,21 +1,85 @@
 .carousel-item {
-  height: 1000px;
+  height: 1200px;
+  overflow: hidden;
+  bottom: initial;
 }
 
-.hero-overlay::after {
+.carousel-item::after {
+  z-index: 1;
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
     #2b2928 10.71%,
-    rgba(96, 90, 83, 0.46) 39.06%,
-    rgba(96, 90, 83, 0.58) 71.88%,
+    rgba(96, 90, 83, 0.7) 39.06%,
+    rgba(96, 90, 83, 0.75) 71.88%,
     #2d2927 100%
   );
   mix-blend-mode: normal;
 }
 
-.carousel-caption {
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner > .carousel-item {
+  position: relative;
+}
+
+.hero-container {
   z-index: 100;
+  height: fit-content;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+.hero-caption {
+  z-index: 100;
+  max-width: 1045px;
+}
+
+.hero-caption * {
+  font-family: "Lora", serif;
+  color: white;
+}
+
+.hero-title {
+  font-weight: 400;
+  font-size: 8rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero-date {
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-align: right;
+}
+
+.hero-meta *,
+.hero-duration,
+.hero-btn {
+  font-family: "Lato", sans-serif;
+}
+
+.hero-meta * {
+  font-weight: 300;
+  line-height: 0.5 rem;
+}
+
+.hero-duration,
+.hero-btn {
+  margin-top: 40px;
+}
+
+.hero-btn {
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  padding: 15px 64px;
+  font-weight: 500;
+  font-size: 20px;
 }
