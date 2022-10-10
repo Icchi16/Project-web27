@@ -8,8 +8,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, "src/index.html"),
-        // about: resolve(__dirname, "src/about.html"),
-        // products: resolve(__dirname, "src/products.html"),
+        header: resolve(__dirname, "src/components/header.html"),
+        hero: resolve(__dirname, "src/components/hot-carousel.html"),
       },
     },
   },
