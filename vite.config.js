@@ -9,7 +9,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, "src/index.html"),
         header: resolve(__dirname, "src/components/header.html"),
-        hero: resolve(__dirname, "src/components/hot-carousel.html"),
+        hero: resolve(__dirname, "src/components/hero-carousel.html"),
       },
     },
   },
