@@ -4,19 +4,25 @@
 }
 
 .breadcrumb {
-  width: 200px;
-  border-bottom: 3px solid var(--color-main);
+  z-index: 2;
+  margin-bottom: 0;
+  height: 12rem;
+  width: 150px;
+  border-bottom: 5px solid var(--color-main);
 
   overflow: string;
 }
 .breadcrumb * {
+  max-width: 600px;
+  width: 100vw;
   line-height: 0;
-  bottom: 20px;
-  transform: translateY(-50%);
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
 
   font-family: var(--lora);
-  font-size: 5rem;
+  font-size: 7rem;
 
   text-align: center;
-  overflow: string;
 }
+

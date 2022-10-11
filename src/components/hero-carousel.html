@@ -4,14 +4,16 @@
   data-bs-ride="carousel"
 >
   <div class="carousel-inner hero-inner">
-    <div class="carousel-item active" data-bs-interval="5000">
+    <div class="carousel-item hero-item active" data-bs-interval="5000">
       <img src="/img/hero-1.jpg" class="d-block w-100" alt="..." />
       <div
         class="hero-container container d-flex position-absolute justify-content-center"
       >
         <div class="hero-caption">
           <div class="hero-date">02/10</div>
-          <div class="hero-title">Les Misérables</div>
+          <div class="hero-title">
+            <h2 class="hero-resize">Les Misérables</h2>
+          </div>
           <div class="hero-meta">
             <p>Director: Emeritus Artist Trần Ly Ly</p>
             <p>Artistic Director: Phan Mạnh Đức</p>
@@ -23,14 +25,16 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="5000">
+    <div class="carousel-item hero-item" data-bs-interval="5000">
       <img src="/img/hero-3.jpg" class="d-block w-100" alt="..." />
       <div
         class="hero-container container d-flex position-absolute justify-content-center"
       >
         <div class="hero-caption">
           <div class="hero-date">12/10</div>
-          <div class="hero-title">Ngọc Lệ Minh Châu</div>
+          <div class="hero-title">
+            <h2 class="hero-resize">Hàm Lệ Minh Châu</h2>
+          </div>
           <div class="hero-meta">
             <p>Director: Emeritus Artist Trần Ly Ly</p>
             <p>Artistic Director: Phan Mạnh Đức</p>
@@ -42,14 +46,14 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="5000">
+    <div class="carousel-item hero-item" data-bs-interval="5000">
       <img src="/img/hero-2.jpg" class="d-block w-100" alt="..." />
       <div
         class="hero-container container d-flex position-absolute justify-content-center"
       >
         <div class="hero-caption">
           <div class="hero-date">12/10</div>
-          <div class="hero-title">MIỀN KÝ ỨC</div>
+          <div class="hero-title"><h2 class="hero-resize">MIỀN KÝ ỨC</h2></div>
           <div class="hero-meta">
             <p>Director: Emeritus Artist Trần Ly Ly</p>
             <p>Artistic Director: Phan Mạnh Đức</p>
@@ -62,6 +66,7 @@
       </div>
     </div>
   </div>
+
   <button
     class="carousel-control-prev"
     type="button"
@@ -71,6 +76,7 @@
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
+
   <button
     class="carousel-control-next"
     type="button"
@@ -81,3 +87,4 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<div id="hidden-resizer" style="visibility: hidden"></div>
