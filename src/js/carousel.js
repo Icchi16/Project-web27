@@ -1,4 +1,3 @@
-import "../css/global.css";
 import "../css/hero-carousel.css";
 import "../css/hot-carousel.css";
 

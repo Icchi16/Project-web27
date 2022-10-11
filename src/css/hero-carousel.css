@@ -43,7 +43,7 @@
 }
 
 .hero-caption * {
-  font-family: "Lora", serif;
+  font-family: var(--lora);
   color: white;
 }
 

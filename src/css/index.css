@@ -1,21 +1,22 @@
-nav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.sect-heading {
-  border-bottom: 20px solid yellowgreen 1;
-}
-
-/* Nav Sect */
-.nav-link {
-  color: var(--color-main);
-}
-
-.nav-link
-
-/* Hero Sect */
-
 /* Sect-2 Hot */
 .sect-2 {
-  background-color: var(--nav-bg-2);
+  background: var(--nav-bg-2);
+}
+
+.breadcrumb {
+  width: 200px;
+  border-bottom: 3px solid var(--color-main);
+
+  overflow: string;
+}
+.breadcrumb * {
+  line-height: 0;
+  bottom: 20px;
+  transform: translateY(-50%);
+
+  font-family: var(--lora);
+  font-size: 5rem;
+
+  text-align: center;
+  overflow: string;
 }

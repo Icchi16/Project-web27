@@ -5,6 +5,10 @@
   --nav-bg-2: #2d2927;
   --color-main: #b27936;
   --placeholder-color: rgb(215, 215, 215, 0.5);
+  --bs-body-color: white;
+
+  /* font */
+  --lora: "Lora", serif;
 }
 
 * {

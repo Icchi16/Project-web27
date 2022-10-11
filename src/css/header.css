@@ -5,6 +5,7 @@
 /* nav responsive */
 .nav {
   transition: background-color var(--nav-transition-time);
+  border-bottom: 1px solid rgba(215, 215, 215, 0.15);
 }
 
 .shrink {
