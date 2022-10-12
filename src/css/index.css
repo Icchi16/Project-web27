@@ -6,15 +6,14 @@
 .breadcrumb {
   z-index: 2;
   margin-bottom: 0;
-  height: 12rem;
+  height: 16rem;
   width: 150px;
   border-bottom: 5px solid var(--color-main);
-
-  overflow: string;
 }
+
 .breadcrumb * {
   max-width: 600px;
-  width: 100vw;
+  min-width: 1000px;
   line-height: 0;
   bottom: 75px;
   left: 50%;
@@ -26,3 +25,125 @@
   text-align: center;
 }
 
+/* sect 3 */
+.sect-3 {
+  background: var(--index-bg-2);
+}
+
+.list-container {
+  margin-top: 70px;
+}
+
+.list-link,
+.list-link.active {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--color-main);
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: all 0.5s ease;
+  padding: 0;
+  margin: 8px 0 !important;
+}
+
+.list-link.active {
+  font-weight: 700;
+}
+
+.custom-card {
+  border: none;
+}
+
+.custom-meta {
+  background-color: #232121;
+  inset: 0;
+  z-index: 0;
+  border-radius: var(--bs-border-radius) !important;
+  /* border-radius: 0.365rem; */
+  /* box-shadow: #85796d57 0px 3px 6px, r#85796d7a 0px 3px 6px; */
+  box-shadow: #85796d57 0px 10px 20px, #85796d3f 0px 6px 6px;
+}
+
+.custom-flex {
+  flex: 1 1 45%;
+}
+
+.custom-thumbnail {
+  z-index: 1;
+}
+
+.custom-body {
+  height: 100%;
+  padding-right: 4%;
+}
+
+.custom-body * {
+  font-family: var(--lora);
+}
+
+.custom-date {
+  text-align: right;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: var(--color-main);
+  flex-grow: 1;
+}
+
+.custom-main {
+  flex-grow: 2;
+}
+
+.custom-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.custom-desc {
+  font-family: var(--jarkata);
+}
+
+.custom-btn-theme {
+  color: var(--color-main);
+  font-style: italic;
+  text-align: left;
+  font-size: 2.5rem;
+
+  padding: 0;
+
+  flex-grow: 1;
+}
+
+.custom-visible {
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.custom-card:hover .custom-visible {
+  opacity: 100;
+}
+
+.custom-card:hover .custom-meta {
+  z-index: 2;
+}
+
+.custom-card:hover .custom-thumbnail {
+  z-index: 3;
+}
+
+.my-custom{
+  margin-bottom: 100px;
+}
+
+/* about sect */
+.sect-4 {
+  background-color: #181616;
+}
+
+
+/* partner sect */
+.sect-5{
+  background-color: var(--nav-bg-2);
+}

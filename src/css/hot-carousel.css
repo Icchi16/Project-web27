@@ -98,14 +98,14 @@
   margin: 0;
 }
 
-.card-title {
+.hot-card-title {
   margin-top: 20px;
   text-align: left;
   font-weight: 500;
   font-size: 1.5rem;
 }
 
-.card-title::after {
+.hot-card-title::after {
   content: "";
   position: absolute;
   bottom: -25px;

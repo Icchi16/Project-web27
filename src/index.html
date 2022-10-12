@@ -38,40 +38,220 @@
       </div>
     </section>
 
-    <!-- Sect List -->
+    <!-- list sect-->
     <section class="sect-3 list">
       <div class="container">
-        <div class="sect-heading text-center">
-          <h1 class="display-4 fst-italic text-light">Dành cho bạn</h1>
+        <div class="col d-flex justify-content-center">
+          <div class="breadcrumb d-block position-relative">
+            <h2 class="position-absolute">Dành Cho Bạn</h2>
+          </div>
         </div>
+
+        <!-- custom list -->
         <div class="list-container bg-main">
-          <div class="list-category">
-            <ul>
-              <li><a href="" class="list-link">Tất cả</a></li>
-            </ul>
-            <ul>
-              <li><a href="" class="list-link">Giao hưởng</a></li>
-            </ul>
-            <ul>
-              <li><a href="" class="list-link">Kịch</a></li>
-            </ul>
-            <ul>
-              <li><a href="" class="list-link">Ca nhạc</a></li>
-            </ul>
-            <ul>
-              <li><a href="" class="list-link">Liveshow</a></li>
-            </ul>
-            <ul>
-              <li><a href="" class="list-link">Xiếc</a></li>
-            </ul>
-            <ul>
-              <li><a href="" class="list-link">Sự kiện</a></li>
-            </ul>
+          <div class="row">
+            <div class="list-category col-3">
+              <ul class="list-group">
+                <li
+                  role="button"
+                  class="list-group-item list-link curso active"
+                >
+                  Tất cả
+                </li>
+                <li role="button" class="list-group-item list-link">
+                  Giao hưởng
+                </li>
+                <li role="button" class="list-group-item list-link">Kịch</li>
+                <li role="button" class="list-group-item list-link">Ca nhạc</li>
+                <li role="button" class="list-group-item list-link">
+                  Liveshow
+                </li>
+                <li role="button" class="list-group-item list-link">Xiếc</li>
+                <li role="button" class="list-group-item list-link">Sự Kiện</li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <div class="row gap-5 position-relative g-0 my-custom">
+                <div class="col">
+                  <div
+                    class="card custom-card position-static"
+                    style="max-width: 540px"
+                  >
+                    <div class="row g-0">
+                      <div class="col custom-thumbnail">
+                        <img
+                          src="/img/custom-1.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="custom-meta position-absolute custom-visible">
+                        <div class="row g-0 h-100">
+                          <div class="col custom-thumbnail custom-flex"></div>
+                          <div
+                            class="card-body custom-body col row g-0 flex-column custom-flex"
+                          >
+                            <div
+                              class="custom-date col d-flex align-items-center justify-content-end"
+                            >
+                              25 Tháng Mười
+                            </div>
+                            <div class="custom-main col">
+                              <div class="custom-title">
+                                À Ố Show - Must See Traditional Vietnamese
+                                Culture Show
+                              </div>
+                              <div class="custom-desc">
+                                A O Show is a unique merge of bamboo circus,
+                                acrobatics acts, contemporary dance, traditional
+                                Vietnamese music and theatrical visual art.
+                              </div>
+                            </div>
+                            <button
+                              type="button"
+                              class="btn custom-btn-theme text-uppercase col"
+                            >
+                              Book ngay <i class="bi bi-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="card custom-card position-static"
+                    style="max-width: 540px"
+                  >
+                    <div class="row g-0">
+                      <div class="col custom-thumbnail">
+                        <img
+                          src="/img/custom-1.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="custom-meta position-absolute custom-visible">
+                        <div class="row g-0 h-100">
+                          <div class="col custom-thumbnail custom-flex"></div>
+                          <div
+                            class="card-body custom-body col row g-0 flex-column custom-flex"
+                          >
+                            <div
+                              class="custom-date col d-flex align-items-center justify-content-end"
+                            >
+                              25 Tháng Mười
+                            </div>
+                            <div class="custom-main col">
+                              <div class="custom-title">
+                                À Ố Show - Must See Traditional Vietnamese
+                                Culture Show
+                              </div>
+                              <div class="custom-desc">
+                                A O Show is a unique merge of bamboo circus,
+                                acrobatics acts, contemporary dance, traditional
+                                Vietnamese music and theatrical visual art.
+                              </div>
+                            </div>
+                            <button
+                              type="button"
+                              class="btn custom-btn-theme text-uppercase col"
+                            >
+                              Book ngay <i class="bi bi-arrow-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- about sect -->
+    <section class="sect-4 about">
+      <div class="container">
+        <div class="col d-flex justify-content-center">
+          <div class="breadcrumb d-block position-relative">
+            <h2 class="position-absolute">Về chúng tôi</h2>
+          </div>
+        </div>
+        <div class="row g-0 gap-5">
+          <div class="col">
+            <div
+              id="aboutcarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#aboutcarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#aboutcarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <!-- <button
+                  type="button"
+                  data-bs-target="#aboutcarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/about-1.png" class="d-block w-100" alt="" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/about-1.png" class="d-block w-100" alt="" />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h3 class="about-title">
+              Một nhà hát hơn 100 tuổi giữa lòng Hà Nội
+            </h3>
+            <p class="about-desc">
+              Được mệnh danh là “Opéra Garnier ở Paris” thu nhỏ giữa lòng Thủ
+              đô, Nhà hát Lớn Hà Nội là địa điểm được đông đảo du khách ưa thích
+              ghé thăm.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sect-5 partner">
+      <div class="container">
+        <h3 class="partner-title">Nhà hát lớn Hà Nội tự hào là ngôi nhà của</h3>
+        <div class="row justify-content-center align-items-center g-0">
+          <div class="col-3">Column</div>
+          <div class="col-3">Column</div>
+          <div class="col-3">Column</div>
+          <div class="col-3">Column</div>
+        </div>
+      </div>
+    </section>
+
+
+    
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

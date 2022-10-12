@@ -7,9 +7,17 @@ import fitty from "fitty";
 // hero-carousel script
 $(".hero-carousel").load("../components/hero-carousel.html", function () {
   fitty(".hero-resize", {
-    minSize: 100,
-    maxSize: 200,
+    maxSize: 128,
     multiLine: false,
+  });
+
+  $(".hero-prev, .hero-next").on("click", function (e) {
+    e.preventDefault();
+
+    fitty(".hero-resize", {
+      maxSize: 128,
+      multiLine: false,
+    });
   });
 });
 
