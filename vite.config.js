@@ -11,6 +11,7 @@ export default defineConfig({
         header: resolve(__dirname, "src/components/header.html"),
         hero: resolve(__dirname, "src/components/hero-carousel.html"),
         hot: resolve(__dirname, "src/components/hot-carousel.html"),
+        footer: resolve(__dirname, "src/components/footer.html"),
       },
     },
   },
