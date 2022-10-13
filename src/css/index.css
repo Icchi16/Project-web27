@@ -51,6 +51,22 @@
 
 .custom-thumbnail {
   z-index: 1;
+  border-radius: ;
+}
+
+.custom-visible {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.custom-active:hover .custom-visible {
+  opacity: 100;
+  visibility: visible;
+}
+
+.custom-active {
+  z-index: 2;
 }
 
 .custom-body {
@@ -92,23 +108,6 @@
   padding: 0;
 
   flex-grow: 1;
-}
-
-.custom-visible {
-  opacity: 0;
-  transition: all 0.4s ease;
-}
-
-.custom-card:hover .custom-visible {
-  opacity: 100;
-}
-
-.custom-card:hover .custom-meta {
-  z-index: 2;
-}
-
-.custom-card:hover .custom-thumbnail {
-  z-index: 3;
 }
 
 .my-custom {
@@ -219,7 +218,6 @@
 .sect-7 * {
   color: black;
 }
-
 
 .subscribe-heading {
   font-weight: 800;
