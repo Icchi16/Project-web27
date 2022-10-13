@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--color-main);
+}
+
+footer * {
+  color: var(--nav-bg-2);
+}
+
+.footer-link {
+  margin: 0 20px;
+}
+
+.footer-row a {
+  width: fit-content;
+  font-weight: 800;
+}
+
+.term-link a {
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.term-link a:last-child {
+  margin-top: 10px;
+}

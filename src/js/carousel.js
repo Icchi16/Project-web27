@@ -6,19 +6,34 @@ import fitty from "fitty";
 
 // hero-carousel script
 $(".hero-carousel").load("../components/hero-carousel.html", function () {
-  fitty(".hero-resize", {
-    maxSize: 128,
-    multiLine: false,
-  });
+  fitty(".hero-resize", { maxSize: 128, multiLine: false });
 
-  $(".hero-prev, .hero-next").on("click", function (e) {
-    e.preventDefault();
-
-    fitty(".hero-resize", {
-      maxSize: 128,
-      multiLine: false,
+  const target1 = $(".hero-item")[0];
+  const target2 = $(".hero-item")[1];
+  const target3 = $(".hero-item")[2];
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      fitty(".hero-resize", { maxSize: 128, multiLine: false });
     });
   });
+
+  const config = {
+    attributes: true,
+    subtree: true,
+    childList: true,
+    characterData: true,
+  };
+
+  observer.observe(target1, config);
+  observer.observe(target2, config);
+  observer.observe(target3, config);
+  // $(".hero-prev, .hero-next").on("click", function (e) {
+  //   e.preventDefault();
+  //   fitty(".hero-resize", {
+  //     maxSize: 128,
+  //     multiLine: false,
+  //   });
+  // });
 });
 
 // hot-carousel-script

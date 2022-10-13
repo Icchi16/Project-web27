@@ -71,9 +71,9 @@
               </ul>
             </div>
 
-            <div class="col">
+            <div class="col ">
               <div class="row gap-5 position-relative g-0 my-custom">
-                <div class="col">
+                <div class="col custom-frame-1">
                   <div
                     class="card custom-card position-static"
                     style="max-width: 540px"
@@ -120,7 +120,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col custom-frame-2">
                   <div
                     class="card custom-card position-static"
                     style="max-width: 540px"
@@ -182,14 +182,25 @@
             <h2 class="position-absolute">Về chúng tôi</h2>
           </div>
         </div>
-        <div class="row g-0 gap-5">
-          <div class="col">
+        <div class="row g-0 about-container">
+          <div class="col-5">
             <div
               id="aboutcarousel"
-              class="carousel slide"
+              class="carousel about-carousel position-relative slide"
               data-bs-ride="carousel"
             >
-              <div class="carousel-indicators">
+              <div class="carousel-inner about-inner">
+                <div class="carousel-item active">
+                  <img src="img/about-1.png" class="d-block w-100" alt="" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/about-1.png" class="d-block w-100" alt="" />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="" />
+                </div> -->
+              </div>
+              <div class="carousel-indicators about-indicators gap-3">
                 <button
                   type="button"
                   data-bs-target="#aboutcarousel"
@@ -211,20 +222,9 @@
                   aria-label="Slide 3"
                 ></button> -->
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/about-1.png" class="d-block w-100" alt="" />
-                </div>
-                <div class="carousel-item">
-                  <img src="img/about-1.png" class="d-block w-100" alt="" />
-                </div>
-                <!-- <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="" />
-                </div> -->
-              </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-7">
             <h3 class="about-title">
               Một nhà hát hơn 100 tuổi giữa lòng Hà Nội
             </h3>
@@ -239,19 +239,85 @@
     </section>
 
     <section class="sect-5 partner">
-      <div class="container">
-        <h3 class="partner-title">Nhà hát lớn Hà Nội tự hào là ngôi nhà của</h3>
-        <div class="row justify-content-center align-items-center g-0">
-          <div class="col-3">Column</div>
-          <div class="col-3">Column</div>
-          <div class="col-3">Column</div>
-          <div class="col-3">Column</div>
+      <div class="container sect-5-container">
+        <div class="partner-title mx-auto text-center">
+          <h3>Nhà hát lớn Hà Nội tự hào là ngôi nhà của</h3>
+        </div>
+        <div class="row g-0 gap-4 flex-column">
+          <div
+            class="row justify-content-center align-items-center gap-5 g-0 partner-list-1"
+          >
+            <div class="col d-flex justify-content-center">
+              <img src="img/partner-1.png" alt="" />
+            </div>
+            <div class="col d-flex justify-content-center">
+              <img src="img/partner-1.png" alt="" />
+            </div>
+            <div class="col d-flex justify-content-center">
+              <img src="img/partner-1.png" alt="" />
+            </div>
+            <div class="col d-flex justify-content-center">
+              <img src="img/partner-1.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="row justify-content-center align-items-center gap-5 g-0 partner-list-2"
+          >
+            <div class="col d-flex justify-content-center">
+              <img src="img/partner-1.png" alt="" />
+            </div>
+            <div class="col d-flex justify-content-center">
+              <img src="img/partner-1.png" alt="" />
+            </div>
+            <div class="col d-flex justify-content-center">
+              <img src="img/partner-1.png" alt="" />
+            </div>
+            <div class="col d-flex justify-content-center">
+              <img src="img/partner-1.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="sect-6 news"><div class="container"></div></section>
 
-    
+    <section class="sect-7 subscribe h-100">
+      <div class="container">
+        <div class="row g-0 gap-5 flex-nowrap my-5">
+          <div class="col-5 my-subscribe">
+            <img src="img/subscribe.png" alt="" />
+          </div>
+          <div
+            class="col-7 h-auto d-flex flex-column justify-content-between subscribe-meta"
+          >
+            <h4 class="subscribe-heading col">
+              Đăng ký nhận tin từ Nhà Hát Lớn Hà Nội
+            </h4>
+            <ul class="subscribe-list list-group col">
+              <li class="list-group-numbered">
+                Độc quyền nhận các tin tức về các sự kiện sắp tới
+              </li>
+              <li>Ưu đãi đặc biệt cho một loạt các sự kiện và trải nghiệm</li>
+              <li>
+                Tin tức và câu chuyện mới nhất từ ​​hậu trường và hơn thế nữa
+              </li>
+            </ul>
+            <div class="subscribe-btn d-flex align-content-start">
+              <button type="button" class="btn btn-outline-dark align-">
+                Đăng ký ngay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+     
+    </footer>
+
+    <!-- script -->
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

@@ -16,6 +16,7 @@ import "./header.js";
 import "./carousel.js";
 import "./resize.js";
 import "./for-you.js";
+import "./footer.js";
 
 $(".hero-prev").on("click", function () {
   console.log("wga");

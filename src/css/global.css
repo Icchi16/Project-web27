@@ -86,3 +86,25 @@ li {
   border-color: var(--color-main);
   color: var(--nav-bg-2);
 }
+
+.breadcrumb {
+  z-index: 2;
+  margin-bottom: 0;
+  height: 16rem;
+  width: 150px;
+  border-bottom: 5px solid var(--color-main);
+}
+
+.breadcrumb * {
+  max-width: 600px;
+  min-width: 1000px;
+  line-height: 0;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: var(--lora);
+  font-size: 7rem;
+
+  text-align: center;
+}

@@ -3,29 +3,7 @@
   background: var(--nav-bg-2);
 }
 
-.breadcrumb {
-  z-index: 2;
-  margin-bottom: 0;
-  height: 16rem;
-  width: 150px;
-  border-bottom: 5px solid var(--color-main);
-}
-
-.breadcrumb * {
-  max-width: 600px;
-  min-width: 1000px;
-  line-height: 0;
-  bottom: 75px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  font-family: var(--lora);
-  font-size: 7rem;
-
-  text-align: center;
-}
-
-/* sect 3 */
+/* sect 3 For U*/
 .sect-3 {
   background: var(--index-bg-2);
 }
@@ -133,7 +111,7 @@
   z-index: 3;
 }
 
-.my-custom{
+.my-custom {
   margin-bottom: 100px;
 }
 
@@ -142,8 +120,128 @@
   background-color: #181616;
 }
 
+.about-container {
+  margin-top: 110px;
+}
 
-/* partner sect */
-.sect-5{
+#aboutcarousel {
+  margin-right: 60px;
+  margin-bottom: 100px;
+}
+
+.about-carousel::after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--color-main);
+
+  transform: translate(-40px, -40px);
+}
+
+.about-inner {
+  z-index: 1;
+}
+
+.about-title,
+.about-desc {
+  font-family: var(--lora);
+}
+
+.about-title {
+  font-size: 4rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 150%;
+  color: var(--color-main);
+}
+
+.about-desc {
+  margin-top: 60px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.about-indicators button {
+  position: relative;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  background-color: var(--color-main) !important;
+}
+
+.about-indicators button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--color-main);
+  opacity: 0;
+}
+
+.about-indicators button.active::after {
+  opacity: 1;
+}
+
+.about-indicators {
+  bottom: -80px;
+}
+
+/* sect-5 partner */
+.sect-5 {
   background-color: var(--nav-bg-2);
+}
+
+.partner-title {
+  padding: 60px 0;
+}
+
+.partner-title * {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--color-main);
+  font-family: var(--lora);
+  font-style: italic;
+}
+
+.partner-list-2 {
+  margin-bottom: 60px;
+}
+
+/* sect-6 news */
+
+/* sect-7 subscribe */
+.sect-7 * {
+  color: black;
+}
+
+
+.subscribe-heading {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.subscribe-list li {
+  list-style: disc;
+  list-style-position: inside;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+}
+
+.subscribe-btn {
+  margin-top: 50px;
+}
+
+.subscribe-btn button {
+  text-transform: uppercase;
+  border-radius: 0%;
+  border: 2px solid;
+  font-weight: 700;
+  padding: 10px 50px;
 }
