@@ -27,13 +27,6 @@ $(".hero-carousel").load("../components/hero-carousel.html", function () {
   observer.observe(target1, config);
   observer.observe(target2, config);
   observer.observe(target3, config);
-  // $(".hero-prev, .hero-next").on("click", function (e) {
-  //   e.preventDefault();
-  //   fitty(".hero-resize", {
-  //     maxSize: 128,
-  //     multiLine: false,
-  //   });
-  // });
 });
 
 // hot-carousel-script

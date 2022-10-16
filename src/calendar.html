@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- header - nav -->
+    <header class="header"></header>
+
+    <!-- calendar -->
+    <section class="calendar-section">
+      <div class="container">
+        <div class="calendar-page">
+          <div class="calendar-heading">
+            <div class="col d-flex justify-content-center">
+              <div class="breadcrumb d-block position-relative my-5">
+                <h2 class="position-absolute">Lịch chương trình</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="calendar-options position-relative">
+            <div class="date-selector">
+              <div class="date-theme position-absolute"></div>
+
+              <div class="owl-carousel date-carousel">
+                <div
+                  class="item date-link active d-flex justify-content-center"
+                >
+                  <h4>Tháng Mười</h4>
+                </div>
+                <div class="item date-link d-flex justify-content-center">
+                  <h4>Tháng Mười Một</h4>
+                </div>
+                <div class="item date-link d-flex justify-content-center">
+                  <h4>Tháng Mười Hai</h4>
+                </div>
+                <div class="item date-link d-flex justify-content-center">
+                  <h4>Tháng Một</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calender-filter">
+            <div class="list-category calendar-filter-list">
+              <ul
+                class="list-group calendar-filter-list-group d-flex flex-row justify-content-center"
+              >
+                <li role="button" class="list-group-item filter-link active">
+                  Tất cả
+                </li>
+                <li role="button" class="list-group-item filter-link">
+                  Giao hưởng
+                </li>
+                <li role="button" class="list-group-item filter-link">Kịch</li>
+                <li role="button" class="list-group-item filter-link">
+                  Ca nhạc
+                </li>
+                <li role="button" class="list-group-item filter-link">
+                  Liveshow
+                </li>
+                <li role="button" class="list-group-item filter-link">Xiếc</li>
+                <li role="button" class="list-group-item filter-link">
+                  Sự Kiện
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="calendar">
+            <table
+              class="table table-bordered border-opacity-75 border-secondary"
+            >
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <td>
+                    <div class="calendar-card passed position-relative">
+                      <div class="card card-on">
+                        <div class="card-date position-absolute">01/10</div>
+                        <div class="card-main">
+                          <div class="card-img">
+                            <img src="/img/hot-1.png" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title">Hàm Lệ Minh Châu</div>
+                              <div class="card-type">Kịch</div>
+                              <div class="card-time">
+                                <div class="card-time-line">01/10 - 04/10</div>
+                                <div class="card-duration">1h30</div>
+                              </div>
+                            </div>
+                            <button
+                              type="button"
+                              class="btn card-btn card-disabled"
+                            >
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card card-on">
+                        <div class="card-date position-absolute">02</div>
+                        <div class="card-main">
+                          <div class="card-img">
+                            <img src="/img/hot-1.png" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title">Hàm Lệ Minh Châu</div>
+                              <div class="card-type">Kịch</div>
+                              <div class="card-time">
+                                <div class="card-time-line">01/10 - 04/10</div>
+                                <div class="card-duration">1h30</div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row 4 -->
+                <tr>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row 5 -->
+                <tr>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="calendar-card position-relative">
+                      <div class="card">
+                        <div class="card-date position-absolute">03</div>
+                        <div class="card-main card-off">
+                          <div class="card-img">
+                            <img src="" alt="" />
+                          </div>
+                          <div
+                            class="card-meta position-absolute d-flex flex-column justify-content-between"
+                          >
+                            <div
+                              class="card-normal d-flex flex-column justify-content-between"
+                            >
+                              <div class="card-title"></div>
+                              <div class="card-type"></div>
+                              <div class="card-time">
+                                <div class="card-time-line"></div>
+                                <div class="card-duration"></div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn card-btn">
+                              Book Now
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="calendar-note d-flex flex-column align-items-center">
+            <div class="calendar-note col-8">
+              <p>
+                Nếu bạn cần thông tin về một trong những vở kịch của chúng tôi,
+                hãy gọi thư ký nhà hát của chúng tôi, số điện thoại miễn phí,
+                821-891-4391. Dịch vụ khách hàng có sẵn từ 9:00 đến 17:00. Từ
+                Thứ Hai đến Thứ Sáu và 10:00 đến 18:00.
+              </p>
+            </div>
+            <button
+              type="button"
+              class="calendar-btn btn btn-theme text-uppercase"
+            >
+              Liên Hệ ngay
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer"></footer>
+
+    <div class="card"><div class="card-meta"></div></div>
+    <!-- script -->
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/calendar.js"></script>
+  </body>
+</html>

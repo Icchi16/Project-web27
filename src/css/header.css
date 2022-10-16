@@ -56,6 +56,11 @@
   transition: transform 0.25s ease-out;
 }
 
+.nav-link:focus,
+.nav-link:active {
+  color: var(--color-main);
+}
+
 /* search */
 .nav-search {
   background: rgba(215, 215, 215, 0.15);
