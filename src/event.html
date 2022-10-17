@@ -9,14 +9,385 @@
     <!-- header - nav -->
     <header class="header"></header>
 
-    <div class="section banner">
-      <div class="banner"><img src="/img/hero-1.jpg" alt="" /></div>
+    <div class="section banner position-relative">
+      <div class="hero-item"><img src="/img/hero-1.jpg" alt="" /></div>
+      <div
+        class="event-container container d-flex position-absolute justify-content-start"
+      >
+        <div class="event-caption">
+          <div class="breadcrumb event-breadcrumb d-flex align-items-center">
+            <h2>Les Misérables</h2>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <section class="section event-detail">
+      <div class="container">
+        <div class="event-sub">
+          <div class="row go-0">
+            <div class="col-4">
+              <div class="event-time">
+                <p>01 tháng 10 - 04 tháng 10</p>
+                <p>Thời lượng: 2 H 30’</p>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="event-staff">
+                <p>Director: Emeritus Artist Trần Ly Ly</p>
+                <p>Artistic Director: Phan Mạnh Đức</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-main">
+          <strong>Nguyên tác văn học kinh điển</strong><br /><br />
+          <i>Nguyên tác văn học kinh điển</i><br /><br />
+          <p>
+            Những người khốn khổ (Tiếng Pháp: Les Misérables hay còn được gọi là
+            Les Mis) là tiểu thuyết của văn hào Pháp Victor Hugo, được xuất bản
+            năm 1862. Tác phẩm được đánh giá là một trong những tiểu thuyết nổi
+            tiếng nhất của nền văn học thế giới thế kỷ 19. <br /><br />Lấy cảm
+            hứng từ tác phẩm văn học đầy tính nhân văn này, dựa trên bối cảnh
+            toàn thế giới đang vật lộn đấu tranh với sự khủng hoảng của đại dịch
+            COVID-19, Nhà hát Nhạc Vũ Kịch Việt Nam (VNOB) đã quyết định cho ra
+            mắt vở nhạc kịch “Những người khốn khổ” để đề cao tình đoàn kết,
+            tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
+            giới.
+          </p>
+        </div>
+
+        <button type="button" class="btn event-btn">
+          Book Now <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="section event-faq">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col">
+            <h2 class="faq-heading">Các câu hỏi thường gặp</h2>
+          </div>
+        </div>
+        <div class="row g-0 gap-5">
+          <div class="col">
+            <div class="accordion accordion-flush" id="faq-left">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq-one">
+                  <button
+                    class="accordion-button collapsed align-items-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="faq-collapseOne"
+                  >
+                    <span class="plusminus"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="plus"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 160 160"
+                        color="rgb(255,222,21)"
+                      >
+                        <rect
+                          class="vertical-line"
+                          x="70"
+                          width="20"
+                          height="160"
+                        />
+                        <rect
+                          class="horizontal-line"
+                          y="70"
+                          width="160"
+                          height="20"
+                        />
+                      </svg> </span
+                    >Tôi cần đến trước bao lâu trước khi bắt đầu?
+                  </button>
+                </h2>
+                <div
+                  id="faq-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq-one"
+                  data-bs-parent="#faq-left"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq-two">
+                  <button
+                    class="accordion-button collapsed align-items-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="faq-collapseTwo"
+                  >
+                    <span class="plusminus"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="plus"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 160 160"
+                        color="rgb(255,222,21)"
+                      >
+                        <rect
+                          class="vertical-line"
+                          x="70"
+                          width="20"
+                          height="160"
+                        />
+                        <rect
+                          class="horizontal-line"
+                          y="70"
+                          width="160"
+                          height="20"
+                        />
+                      </svg>
+                    </span>
+                    Sẽ có kiêm tra túi xách khi vào khán phòng?
+                  </button>
+                </h2>
+                <div
+                  id="faq-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq-two"
+                  data-bs-parent="#faq-left"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq-three">
+                  <button
+                    class="accordion-button collapsed align-items-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="faq-collapseThree"
+                  >
+                    <span class="plusminus"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="plus"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 160 160"
+                        color="rgb(255,222,21)"
+                      >
+                        <rect
+                          class="vertical-line"
+                          x="70"
+                          width="20"
+                          height="160"
+                        />
+                        <rect
+                          class="horizontal-line"
+                          y="70"
+                          width="160"
+                          height="20"
+                        />
+                      </svg> </span
+                    >Em bé đi cùng có thể ngồi cùng với phụ huynh không?
+                  </button>
+                </h2>
+                <div
+                  id="faq-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq-three"
+                  data-bs-parent="#faq-left"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the
+                    space to make it look, at least at first glance, a bit more
+                    representative of how this would look in a real-world
+                    application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="accordion accordion-flush" id="faq-right">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq-four">
+                  <button
+                    class="accordion-button collapsed align-items-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="faq-collapseFour"
+                  >
+                    <span class="plusminus"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="plus"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 160 160"
+                        color="rgb(255,222,21)"
+                      >
+                        <rect
+                          class="vertical-line"
+                          x="70"
+                          width="20"
+                          height="160"
+                        />
+                        <rect
+                          class="horizontal-line"
+                          y="70"
+                          width="160"
+                          height="20"
+                        />
+                      </svg> </span
+                    >Tôi cần làm gì khi tôi không thể đến được sự kiện?
+                  </button>
+                </h2>
+                <div
+                  id="faq-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq-four"
+                  data-bs-parent="#faq-right"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-five">
+                  <button
+                    class="accordion-button collapsed align-items-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="faq-collapseFive"
+                  >
+                    <span class="plusminus"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="plus"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 160 160"
+                        color="rgb(255,222,21)"
+                      >
+                        <rect
+                          class="vertical-line"
+                          x="70"
+                          width="20"
+                          height="160"
+                        />
+                        <rect
+                          class="horizontal-line"
+                          y="70"
+                          width="160"
+                          height="20"
+                        />
+                      </svg> </span
+                    >Sẽ có đồ ăn và đồ uống phục vụ tại rạp hát?
+                  </button>
+                </h2>
+                <div
+                  id="faq-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq-five"
+                  data-bs-parent="#faq-right"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq-six">
+                  <button
+                    class="accordion-button collapsed align-items-start"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="faq-collapseSix"
+                  >
+                    <span class="plusminus"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="plus"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 160 160"
+                        color="rgb(255,222,21)"
+                      >
+                        <rect
+                          class="vertical-line"
+                          x="70"
+                          width="20"
+                          height="160"
+                        />
+                        <rect
+                          class="horizontal-line"
+                          y="70"
+                          width="160"
+                          height="20"
+                        />
+                      </svg>
+                    </span>
+                    Tôi có thể hút thuốc tại nhà hát không?
+                  </button>
+                </h2>
+                <div
+                  id="faq-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq-six"
+                  data-bs-parent="#faq-right"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the
+                    space to make it look, at least at first glance, a bit more
+                    representative of how this would look in a real-world
+                    application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- footer -->
     <footer class="footer"></footer>
 
     <!-- script -->
+    <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/event.js"></script>
   </body>
 </html>

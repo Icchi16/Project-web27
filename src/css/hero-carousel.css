@@ -2,6 +2,7 @@
   height: 1000px;
   overflow: hidden;
   bottom: initial;
+  position: relative;
 }
 
 .hero-item::after {
