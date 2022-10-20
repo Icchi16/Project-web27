@@ -15,7 +15,7 @@
 .list-link,
 .list-link.active {
   box-sizing: border-box;
-  font-size: 1.5rem;
+  font-size: var(--deskt-1-5-rem);
   text-transform: uppercase;
   font-weight: 300;
   color: var(--color-main);
@@ -40,8 +40,6 @@
   inset: 0;
   z-index: 0;
   border-radius: var(--bs-border-radius) !important;
-  /* border-radius: 0.365rem; */
-  /* box-shadow: #85796d57 0px 3px 6px, r#85796d7a 0px 3px 6px; */
   box-shadow: #85796d57 0px 10px 20px, #85796d3f 0px 6px 6px;
 }
 
@@ -80,7 +78,7 @@
 
 .custom-date {
   text-align: right;
-  font-size: 2.5rem;
+  font-size: var(--deskt-2-5-rem);
   font-style: italic;
   color: var(--color-main);
   flex-grow: 1;
@@ -91,7 +89,7 @@
 }
 
 .custom-title {
-  font-size: 1.8rem;
+  font-size: var(--deskt-1-8-rem);
   margin-bottom: 2rem;
 }
 
@@ -103,7 +101,7 @@
   color: var(--color-main);
   font-style: italic;
   text-align: left;
-  font-size: 2.5rem;
+  font-size: var(--deskt-2-5-rem);
 
   padding: 0;
 
@@ -148,7 +146,7 @@
 }
 
 .about-title {
-  font-size: 4rem;
+  font-size: var(--deskt-4-rem);
   font-weight: 500;
   font-style: italic;
   line-height: 150%;
@@ -157,7 +155,7 @@
 
 .about-desc {
   margin-top: 60px;
-  font-size: 2rem;
+  font-size: var(--deskt-2-rem);
   font-weight: 400;
   line-height: 200%;
 }
@@ -202,7 +200,7 @@
 
 .partner-title * {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: var(--deskt-2-rem);
   color: var(--color-main);
   font-family: var(--lora);
   font-style: italic;
@@ -221,7 +219,7 @@
 
 .subscribe-heading {
   font-weight: 800;
-  font-size: 2rem;
+  font-size: var(--deskt-2-rem);
 }
 
 .subscribe-list li {

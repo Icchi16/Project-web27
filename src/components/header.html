@@ -1,11 +1,37 @@
 <nav class="nav navbar navbar-expand-lg fixed-top bg-main">
-  <div class="container d-flex">
-    <div
-      class="collapse navbar-collapse justify-content-between"
-      id="navbarSupportedContent"
+  <div class="container-lg container-fluid d-flex">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbar"
+      aria-controls="navbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
-      <a href="#" class="navbar-brand"><img src="/img/logo.svg" alt="" /></a>
-      <ul class="navbar-nav gap-4">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#" class="navbar-brand"><img src="/img/logo.svg" alt="" /></a>
+    <form class="d-flex nav-search" role="search">
+      <input
+        class="search-type"
+        id="navsearch"
+        type="search"
+        placeholder="Tìm kiếm ..."
+        aria-label="Search"
+      />
+      <button
+        class="search-btn d-block d-lg-none"
+        type="submit"
+        data-bs-toggle="collapse"
+        data-bs-target="#navsearch"
+      >
+        <i class="bi bi-search"></i>
+      </button>
+    </form>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbar">
+      <ul class="navbar-nav navbar-nav-scroll gap-4">
         <!-- <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -60,17 +86,17 @@
                 </ul>
               </li> -->
       </ul>
-      <form class="d-flex nav-search" role="search">
-        <input
-          class="search-type"
-          type="search"
-          placeholder="Tìm kiếm ..."
-          aria-label="Search"
-        />
-        <button class="search-btn" type="submit">
-          <i class="bi bi-search"></i>
-        </button>
-      </form>
     </div>
+    <form class="d-flex nav-search d-none d-lg-block" role="search">
+      <input
+        class="search-type"
+        type="search"
+        placeholder="Tìm kiếm ..."
+        aria-label="Search"
+      />
+      <button class="search-btn" type="submit">
+        <i class="bi bi-search"></i>
+      </button>
+    </form>
   </div>
 </nav>
