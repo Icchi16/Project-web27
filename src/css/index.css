@@ -222,6 +222,10 @@
   font-size: var(--deskt-2-rem);
 }
 
+.subscribe-meta *{
+  margin-left: 30px;
+}
+
 .subscribe-list li {
   list-style: disc;
   list-style-position: inside;
