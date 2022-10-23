@@ -1,13 +1,10 @@
 .footer {
   background-color: var(--color-main);
+  padding: 20px;
 }
 
 footer * {
   color: var(--nav-bg-2);
-}
-
-.footer-link {
-  margin: 0 20px;
 }
 
 .footer-row a {
@@ -16,10 +13,33 @@ footer * {
 }
 
 .term-link a {
-  font-weight: 500;
+  display: block;
   font-size: 0.7rem;
+  line-height: 1;
+  width: fit-content;
 }
 
 .term-link a:last-child {
   margin-top: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 923px) {
+  .social-link {
+    font-size: 1.5rem;
+    justify-content: start;
+  }
+
+  .term-link a {
+    margin: 0 20px !important;
+    margin-bottom: 40px;
+  }
+
+  .footer-link {
+    margin: 10px auto;
+  }
 }

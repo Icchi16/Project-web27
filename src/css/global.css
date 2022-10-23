@@ -17,6 +17,7 @@
   --deskt-2-rem: 2rem;
   --deskt-4-rem: 4rem;
   --deskt-breadcrumb-fs: 7rem;
+  --deskt-breadcrumb-h: 14rem;
   --lora: "Lora", serif;
   --jarkata: "Plus Jakarta Sans", sans-serif;
 }
@@ -101,7 +102,7 @@ p {
 .breadcrumb {
   z-index: 2;
   margin-bottom: 0;
-  height: calc(var(--deskt-breadcrumb-fs) * 2);
+  height: var(--deskt-breadcrumb-h);
   width: 150px;
   border-bottom: 5px solid var(--color-main);
 }
@@ -222,23 +223,20 @@ svg {
   } */
 }
 
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 923px) {
   :root {
-    --deskt-1-5-rem: 1.5rem;
+    --deskt-1-5-rem: 1.2rem;
     --deskt-1-8-rem: 1.3rem;
     --deskt-2-5-rem: 2rem;
-    --deskt-2-rem: 1.5rem;
-    --deskt-4-rem: 3.5rem;
+    --deskt-2-rem: 1.4rem;
+    --deskt-4-rem: 2.2rem;
     --deskt-breadcrumb-fs: 5rem;
+    --deskt-breadcrumb-h: 9rem;
   }
 
-  .breadcrumb * {
-    min-width: 100vw;
+  .breadcrumb *{
+    bottom: 50px;
   }
-
-  /* html{
-    font-size: 8px;
-  } */
 }
 
 @media only screen and (max-width: 576px) {
@@ -249,13 +247,10 @@ svg {
     --deskt-2-rem: 1rem;
     --deskt-4-rem: 2rem;
     --deskt-breadcrumb-fs: 3rem;
+    --deskt-breadcrumb-h: 7rem;
   }
 
-  .breadcrumb * {
-    min-width: 100vw;
+   .breadcrumb *{
+    bottom: 30px;
   }
-
-  /* html{
-    font-size: 8px;
-  } */
 }

@@ -50,7 +50,6 @@
 
 .hot-card {
   box-sizing: border-box;
-  padding-right: var(--card-padding);
   background: none;
   border: none;
   position: relative;
@@ -60,7 +59,6 @@
   position: absolute;
   content: "";
   inset: 0;
-  right: var(--card-padding);
   background-color: var(--nav-bg-1);
   transition: border 0.1s ease;
   border: 0px solid var(--color-main);
@@ -130,16 +128,17 @@
 .hot-button {
   color: var(--color-main);
   background: none;
-  border: 3px solid var(--color-main);
-  width: 80px;
-  padding: 10px 0;
+  width: fit-content;
   border-radius: 0;
+  border: 2px solid var(--color-main);
+  padding: 8px 15px;
 
   transition: all 0.2s ease;
 }
 
 .hot-button i {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  
 }
 
 .hot-button:hover,
