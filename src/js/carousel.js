@@ -7,8 +7,8 @@ import fitty from "fitty";
 import "./jquery.js";
 import "owl.carousel/dist/owl.carousel.min.js";
 
-// hero-carousel script
 $(function () {
+  // hero-carousel script
   $(".hero-carousel").load("../components/hero-carousel.html", function () {
     fitty(".hero-resize", { maxSize: 128, multiLine: false });
 
@@ -39,7 +39,7 @@ $(function () {
       loop: true,
       nav: true,
       dots: false,
-      margin: 15,
+      margin: 30,
       responsive: {
         0: {
           items: 1,

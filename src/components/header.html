@@ -1,7 +1,7 @@
 <nav class="nav navbar navbar-expand-lg fixed-top bg-main">
   <div class="container-lg container-fluid d-flex">
     <button
-      class="navbar-toggler"
+      class="navbar-toggler ham-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbar"
@@ -9,46 +9,46 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <i class="bi bi-list "></i>
     </button>
-    <a href="#" class="navbar-brand"><img src="/img/logo.svg" alt="" /></a>
-    <form class="d-flex nav-search d-none" role="search">
-      <input
-        class="search-type"
-        id="navsearch"
-        type="search"
-        placeholder="Tìm kiếm ..."
-        aria-label="Search"
-      />
-      <button
-        class="search-btn d-block d-lg-none"
-        type="submit"
-        data-bs-toggle="collapse"
-        data-bs-target="#navsearch"
-      >
-        <i class="bi bi-search"></i>
-      </button>
-    </form>
 
+    <!-- logo -->
+    <a href="#" class="navbar-brand"><img src="/img/logo.svg" alt="" /></a>
+
+    <!-- mobile search -->
+    <button
+      class="navbar-toggler d-lg-none collapsed" 
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mobilesearch"
+      aria-controls="navbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="bi bi-search"></i>
+    </button>
+    <div
+      class="mobile-search collapse navbar-collapse justify-content-center "
+      id="mobilesearch"
+    >
+      <ul class="navbar-nav navbar-nav-scroll gap-4">
+        <form class="d-flex nav-search justify-content-end" role="search">
+          <input
+            class="search-type"
+            type="search"
+            placeholder="Tìm kiếm ..."
+            aria-label="Search"
+          />
+          <button class="search-btn" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </ul>
+    </div>
+
+    <!-- nav -->
     <div class="collapse navbar-collapse justify-content-center" id="navbar">
       <ul class="navbar-nav navbar-nav-scroll gap-4">
-        <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sự kiện
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nổi bật</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                </ul>
-              </li> -->
         <li class="nav-item">
           <a class="nav-link" href="../index.html">Trang chủ</a>
         </li>
@@ -64,29 +64,9 @@
         <li class="nav-item">
           <a class="nav-link" href="../about.html">Giới thiệu</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sự kiện
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li> -->
       </ul>
     </div>
+
     <form class="d-flex nav-search d-none d-lg-block" role="search">
       <input
         class="search-type"
