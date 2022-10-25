@@ -92,3 +92,33 @@
   </button>
 </div>
 <div id="hidden-resizer" style="visibility: hidden"></div>
+
+<script type="text/html" id="hero-template">
+  <div
+    class="carousel-item hero-item active"
+    id="hero-${ id }"
+    data-bs-interval="4000"
+  >
+    <img src="${ thumbnail }" class="d-block w-100" alt="..." />
+    <div
+      class="hero-container container d-flex position-absolute justify-content-center"
+    >
+      <div class="hero-caption">
+        <div class="hero-date">${ showtime[0] }</div>
+        <div class="hero-title d-flex align-items-center">
+          <h2 class="hero-resize">${ title }</h2>
+        </div>
+        <div class="hero-meta">
+          <p>${ staff[0]["position"] } : ${ staff[0]["name"] }</p>
+          <p>${ staff[1]["position"] } : ${ staff[1]["name"] }</p>
+        </div>
+        <div class="hero-duration">
+          Thời lượng: ${ duration } bao gồm giữa giờ
+        </div>
+        <button type="button" class="hero-btn btn btn-outline-light">
+          Book Now
+        </button>
+      </div>
+    </div>
+  </div>
+</script>

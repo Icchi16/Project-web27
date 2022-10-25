@@ -1,5 +1,12 @@
+// import css
 import "../css/header.css";
+
+// import funciton
 import $ from "jquery";
+
+// import database
+
+// script
 
 $(".header").load("../components/header.html", function () {
   const onScroll = () => {
@@ -20,4 +27,6 @@ $(".header").load("../components/header.html", function () {
       $(".nav").toggleClass("shrink-mobile");
     });
   });
+
+  // render header
 });

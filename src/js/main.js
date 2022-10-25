@@ -1,6 +1,5 @@
 // import dependencies
 import "./jquery.js";
-import $ from "jquery";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.js";
 import "fitty/dist/fitty.min.js";

@@ -16,7 +16,7 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-1.jpg",
+    thumbnail: "./img/hero-1.jpg",
     banner: "./img/hot-1.png",
     category: "kich",
     showtime: ["02/10/2022", "03/10/2022"],
@@ -25,6 +25,7 @@ export const eventsDb = [
       { position: "Artistic Director", name: "Phan Mạnh Đức" },
       { position: "General Director", name: "Trần Ly Ly" },
     ],
+    duration: "2 tiếng",
   },
   {
     id: 2,
@@ -43,7 +44,7 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-2.jpg",
+    thumbnail: "./img/hero-2.jpg",
     banner: "./img/hot-2.png",
     category: "kich",
     showtime: ["07/10/2022", "08/10/2022", "09/10/2022"],
@@ -70,12 +71,15 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-3.jpg",
+    thumbnail: "./img/hero-3.jpg",
     banner: "./img/hot-3.png",
     category: "am-nhac",
     showtime: ["13/10/2022", "14/10/2022", "15/10/2022", "16/10/2022"],
     duration: "03h00m",
-    staff: [{ position: "Nhạc Sĩ", name: "Phú Quang" }],
+    staff: [
+      { position: "Nhạc Sĩ", name: "Phú Quang" },
+      { position: "", name: "" },
+    ],
   },
   {
     id: 4,
@@ -94,7 +98,7 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-4.jpg",
+    thumbnail: "./img/hero-4.jpg",
     banner: "./img/hot-4.png",
     category: "liveshow",
     showtime: ["19/10/2022", "20/10/2022"],
@@ -121,10 +125,11 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-5.jpg",
+    thumbnail: "./img/hero-5.jpg",
     banner: "./img/hot-5.png",
     category: "giao-huong",
     showtime: ["22/10/2022", "23/10/2022", "24/10/2022"],
+    duration: "03h00m",
     staff: [{ position: "Conductor", name: "Maestro Fan Ting" }],
   },
   {
@@ -144,10 +149,11 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-6.jpg",
+    thumbnail: "./img/hero-6.jpg",
     banner: "./img/hot-6.png",
     category: "liveshow",
     showtime: ["27/10/2022", "28/10/2022"],
+    duration: "03h00m",
     staff: [
       { position: "Director", name: "Lê Ngọc Vân" },
       { position: "Conductor", name: "Dông Quang Vinh" },
@@ -170,10 +176,11 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-7.jpg",
+    thumbnail: "./img/hero-7.jpg",
     banner: "./img/hot-7.png",
     category: "kich",
     showtime: ["01/11/2022", "02/11/2022", "03/11/2022"],
+    duration: "03h00m",
     staff: [
       { position: "Choreography", name: "Bùi Ngọc Quân" },
       { position: "Musician", name: "Trí Minh" },
@@ -196,10 +203,11 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-8.jpg",
+    thumbnail: "./img/hero-8.jpg",
     banner: "./img/hot-8.png",
     category: "am-nhac",
     showtime: ["10/11/2022", "12/11/2022"],
+    duration: "03h00m",
     staff: [
       { position: "Emeritus Artist", name: "Lê Phi Phi" },
       { position: "Director", name: "Trần Ly Ly" },
@@ -222,10 +230,11 @@ export const eventsDb = [
             tính nhân văn và niềm tin vào tương lai của người dân trên toàn thế
             giới.
           </p>"`,
-    thumbanail: "./img/hero-9.jpg",
+    thumbnail: "./img/hero-9.jpg",
     banner: "./img/hot-9.png",
     category: "am-nhac",
     showtime: ["10/11/2022", "12/11/2022"],
+    duration: "03h00m",
     staff: [
       { position: "Emeritus Artist", name: "Lê Phi Phi" },
       { position: "Director", name: "Trần Ly Ly" },
