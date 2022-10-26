@@ -19,13 +19,32 @@ import { eventsDb } from "./db";
 
 // script
 // func render Hero
-const renderHero = () => {
+export const renderHero = () => {
   const $heroEvents = $(".hero-inner");
   const heroTemplate = $("#hero-template").html();
   const hero = _.template(heroTemplate);
-  // const startHeroEvent = Math.random() * (eventsDb.length - 4);
-  const startHeroEvent = 0;
+  const startHeroEvent = Math.random() * (eventsDb.length - 2);
   const heroEvents = eventsDb.slice(startHeroEvent, startHeroEvent + 3);
+
+  _.forEach(heroEvents, function (p) {
+    const defaultShowtime = p[`showtime`];
+
+    const formatedShowtime = _.map(defaultShowtime, function (p) {
+      const stringShowtime = p.split("-");
+      const convertedShowtime = new Date(
+        stringShowtime[2],
+        stringShowtime[1],
+        stringShowtime[0]
+      );
+
+      const date = convertedShowtime.getDate().toString().padStart(2, "0");
+      const month = convertedShowtime.getMonth().toString().padStart(2, "0");
+      const heroShowtime = `${date}/${month}`;
+      // p = `${date}/${month}`;
+      return heroShowtime;
+    });
+    return (p[`showtime`] = formatedShowtime);
+  });
 
   $heroEvents.html("");
   $heroEvents.append(
@@ -37,7 +56,7 @@ const renderHero = () => {
 };
 
 // func resize Hero Title
-const resizeTitle = () => {
+export const resizeTitle = () => {
   fitty(".hero-resize", { maxSize: 128, multiLine: false });
 
   const target1 = $(".hero-item")[0];
@@ -64,12 +83,14 @@ const resizeTitle = () => {
 // import Hero html
 $(function () {
   // hero-carousel script
+
   $(".hero-carousel").load("../components/hero-carousel.html", function () {
     //  render Hero
     renderHero();
+    $(".hero-item").filter(":first-child").addClass("active");
+
     //  resize Title
     resizeTitle();
-    // resizeTitle();
   });
 
   // hot-carousel-script

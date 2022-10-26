@@ -11,4 +11,7 @@ import "./carousel.js";
 import "./for-you.js";
 import "./footer.js";
 
+// import script
+
 // import database
+
