@@ -6,9 +6,9 @@ import "owl.carousel/dist/assets/owl.carousel.min.css";
 // import function
 import $ from "jquery";
 import fitty from "fitty";
-import _ from "lodash";
+import _, { filter } from "lodash";
 
-import { toEvent } from "./utils";
+// import { toEvent } from "./utils";
 
 // import script
 import "./jquery.js";
@@ -19,37 +19,57 @@ import { eventsDb } from "./db";
 
 // script
 // func render Hero
+
+export const formatedEventsDB = eventsDb
+  .map((p) => {
+    return Object.assign({}, p);
+  })
+  .map((p) => {
+    p.showtime = [
+      ..._.map(p.showtime, (d) => {
+        return Date.parse(d);
+      }),
+    ];
+    return p;
+  });
+
 export const renderHero = () => {
   const $heroEvents = $(".hero-inner");
   const heroTemplate = $("#hero-template").html();
   const hero = _.template(heroTemplate);
-  const startHeroEvent = Math.random() * (eventsDb.length - 2);
-  const heroEvents = eventsDb.slice(startHeroEvent, startHeroEvent + 3);
+  const startHeroEvent = Math.random() * (formatedEventsDB.length - 2);
+  let heroEvents = formatedEventsDB.slice(startHeroEvent, startHeroEvent + 3);
 
-  _.forEach(heroEvents, function (p) {
-    const defaultShowtime = p[`showtime`];
-
-    const formatedShowtime = _.map(defaultShowtime, function (p) {
-      const stringShowtime = p.split("-");
-      const convertedShowtime = new Date(
-        stringShowtime[2],
-        stringShowtime[1],
-        stringShowtime[0]
-      );
-
-      const date = convertedShowtime.getDate().toString().padStart(2, "0");
-      const month = convertedShowtime.getMonth().toString().padStart(2, "0");
-      const heroShowtime = `${date}/${month}`;
-      // p = `${date}/${month}`;
-      return heroShowtime;
+  heroEvents = heroEvents
+    .map((p) => {
+      return Object.assign({}, p);
+    })
+    .map((p) => {
+      p.showtime = [
+        ..._.map(p.showtime, (d) => {
+          const heroFormatedDate = new Date(d);
+          const date = heroFormatedDate.getDate().toString().padStart(2, "0");
+          const month = (heroFormatedDate.getMonth() + 1)
+            .toString()
+            .padStart(2, "0");
+          return `${date} / ${month}`;
+        }),
+      ];
+      return p;
     });
-    return (p[`showtime`] = formatedShowtime);
-  });
 
   $heroEvents.html("");
   $heroEvents.append(
     _.map(heroEvents, (p) => {
       const dom = $(hero(p));
+
+      const eventID = p[`id`];
+      const parsedEventUrl = new URL(
+        `../event.html?eventid=${eventID}`,
+        window.location.href
+      );
+
+      dom.find(".btn").parent().attr("href", parsedEventUrl);
       return dom;
     })
   );
@@ -86,6 +106,7 @@ $(function () {
 
   $(".hero-carousel").load("../components/hero-carousel.html", function () {
     //  render Hero
+
     renderHero();
     $(".hero-item").filter(":first-child").addClass("active");
 
@@ -93,8 +114,8 @@ $(function () {
     resizeTitle();
   });
 
-  // hot-carousel-script
-  $(".hot-carousel").load("../components/hot-carousel.html", function () {
+  // hot-carousel-function
+  async function renderHot() {
     $(".hot-owl-carousel").owlCarousel({
       loop: true,
       nav: true,
@@ -121,5 +142,25 @@ $(function () {
         `<i class="bi bi-arrow-right"></i>`,
       ],
     });
+
+    const result = await filterHot();
+    return result;
+  }
+
+  const filterHot = () => {
+    const today = new Date();
+
+    const eventDbShowtime = _.map(formatedEventsDB, ({ showtime }) => {
+      // return showtime;
+      _.map(showtime, (p) => {});
+    });
+  };
+  //
+  //
+  // hot-carousel-script
+  $(".hot-carousel").load("../components/hot-carousel.html", function () {
+    filterHot();
+
+    renderHot();
   });
 });

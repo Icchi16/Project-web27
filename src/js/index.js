@@ -14,4 +14,3 @@ import "./footer.js";
 // import script
 
 // import database
-
